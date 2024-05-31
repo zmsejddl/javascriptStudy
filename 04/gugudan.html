@@ -9,5 +9,27 @@
 </head>
 <body>
 	<h1>구구단</h1>
+	<script>
+		for(var i = 2; i <= 9; i++) {
+			document.write("<div>")
+			document.write("<h3>" + i + "단</h3>");
+			for(var j = 1; j <= 9; j++) {
+				document.write(i + " X " + j + " = " + i * j + "<br>")
+			}
+			document.write("</div>")
+		}
+
+		// 1분 복습
+		// 지금까지 작성한 소스는 구구단의 2단부터 9단까지 표시합니다.
+		// 이 소스를 수정하여 구구단 2단에서 5단까지 표시하려면 어느 부분을 어떻게 수정해야 할까요?
+		// for(var i = 2; i <= 5; i++) {
+		// 	document.write("<div>");
+		// 	document.write("<h3>" + i + "단</h3>");
+		// 	for(var j = 1; j <= 9; j++) {
+		// 		document.write(i + " X " + j + " = " + i * j + "<br>")
+		// 	}
+		// 	document.write("</div>");
+		// }
+	</script>
 </body>
 </html>
