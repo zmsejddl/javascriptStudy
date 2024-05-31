@@ -8,6 +8,22 @@
 	<link rel="stylesheet" href="css/factorial.css">
 </head>
 <body>
+	<script>
+		var n = prompt("숫자를 입력하세요.");	//몇까지 곱할 것인지를 프롬프트 창으로 입력받아 변수에 저장
+		var nFact = 1;	//팩토리얼 계산 결과값을 저장할 변수, 1을 기본 값으로 지정
+		var i = 2;	//반복문에 사용할 카운터 변수. 1! = 1이기 때문에 i = 2부터 시작
 
+		while(i <= n) {	//i = n까지 반복
+			nFact *= i	//nFact = nFact * i
+			i++
+		}
+
+		document.write(n + "! = " + nFact)
+
+		// 1분 복습
+		// 프롬프트 창에 기본 값이 10으로 표시되게 하려고 합니다.
+		// prompt("숫자를 입력하세요."); 소스를 수정하세요.
+		// prompt("숫자를 입력하세요.", "10");
+	</script>
 </body>
 </html>
