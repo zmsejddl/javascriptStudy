@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if문과 if...else문 작동 원리 알아보기
+        // if(true) {
+        //     document.write("if문의 조건을 만족하여 이 문장이 실행되었습니다.");
+        // }
+
+        // if(false) {
+        //     document.write("if문의 조건을 만족하여 이 문장이 실행되었습니다.");
+        // }
+
+        // var number = prompt("숫자를 입력하세요.");
+        // if(number < 0) {
+        //     alert("0 이상의 수를 입력하세요");
+        // } else {
+        //     document.write("입력한 숫자: " + write);
+        // }
+
+        // 1분 복습
+        // 변수 age 값이 18보다 크거나 같으면 "성인입니다."라고 표시하고 그렇지 않으면 "미성년입니다."라고 알림 창에 표시하는 소스를 작성하세요.
+        // var age = prompt("숫자를 입력하세요.");
+        // if(age >= 18) {
+        //     alert("성인입니다.");
+        // } else {
+        //     alert("미성년입니다");
+        // }
+
+
+        // 조건 연산자 - ?(물음표)와 :(콜론)
+        // var score = 75;
+        // (score >= 60) ? alert("통과") : alert("실패");
+
+
+        // truthy 값과 falsy 값
+        var input = prompt("이름을 입력하세요.");
+        if(input) {     //input에 값이 들어 있으면 truthy합니다 (true와 동일합니다)
+            alert("이름을 입력했습니다: " + input);
+        } else {        //input에 값이 들어 있지 않으면 falsy합니다 (false와 동일합니다)
+            alert("이름을 입력하지 않았습니다.");
+        }
+    </script>
+</body>
+</html>
