@@ -1,5 +1,4 @@
 		var numbers = [2, 4, 6, 8, 10];
-		showArray(numbers);
 
 		function showArray(arr) {
 			var str = "<table><tr>";
@@ -9,3 +8,11 @@
 			str += "</tr></table>";
 			document.write(str);
 		}
+
+		var result = 0;
+		for(var i = 0; i < numbers.length; i++) {
+			result += numbers[i];
+		}
+		numbers.push(result);
+		
+		showArray(numbers);
