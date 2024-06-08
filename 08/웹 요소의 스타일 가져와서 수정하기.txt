@@ -1,0 +1,7 @@
+DOM으로 CSS 속성에 접근하고 수정하기
+document.querySelector("#heading").style.color = "white"
+
+1분 복습
+콘솔 창에서 domCss1.html 문서에 있는 텍스트 단락(id="desc")의 글자를 빨간색으로 바꿔 보세요.
+정답:
+document.querySelector("#desc").style.color = "red"
