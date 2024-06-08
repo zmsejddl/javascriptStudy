@@ -16,5 +16,33 @@
 		}
 	</style>
 </head>
-<body></body>
+<body>
+	<!-- 웹 문서에 새로운 노드 추가하기 -->
+
+	<script>
+		// 요소 노드 만들기 - createElement() 함수
+		var newP = document.createElement("p")
+
+		// 텍스트 노드 만들기 - createTextNode() 함수
+		var newText = document.createTextNode("주문이 완료되었습니다.");
+
+		// 자식 노드로 추가하기 - appendChild() 함수
+		newP.appendChild(newText);
+		document.body.appendChild(newP);
+
+		// 속성 노드 만들기 - createAttribute() 함수
+		var attr = document.createAttribute("class");
+		attr.value = "accent";
+
+		// 속성 노드 연결하기 - setAttributeNode() 함수
+		newP.setAttributeNode(arr);
+		// newP.setAttribute("class", "accent");	이렇게도 사용할 수 있음
+
+		// 1분 복습
+		// id="doit_js" 속성을 추가하려고 합니다.
+		// 콘솔 창에서 easys라는 속성 노드를 만들고 속성 값을 지정해 보세요
+		// var easys = document.createAttribute("id");
+		// easys.value = ("doit_js");
+	</script>
+</body>
 </html>
