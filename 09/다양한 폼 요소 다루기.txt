@@ -1,0 +1,26 @@
+선택 목록 및 옵션 항복에 접근하기
+document.testForm.major
+document.testForm.major.options
+document.testForm.major.options[4]  //다섯 번째 옵션 항목에 접근
+document.testForm.major.options[4].innerText    //다섯 번째 옵션 항목의 화면 표시 내용
+document.testForm.major.options[4].value    //다섯 번째 옵션의 서버 전달 값
+
+1분 복습
+getForm.html 문서에 있는 선택 목록에서 세 번째 항목이 화면에 표시하는 내용을 가져오는 소스를 작성하세요.
+정답:
+document.testForm.major.options[2].innerText;
+
+
+선택 목록에서 사용자가 선택한 옵션 항목 찾아내기
+document.testForm.major.options.selectedIndex
+
+
+라디오 버튼과 체크 상자에 접근하기
+document.testForm.subject
+document.testForm.mailing1
+document.testForm.subject[0].checked
+document.testForm.subject[1].checked
+document.testForm.subject[2].checked
+document.testForm.mailing1.checked
+document.testForm.mailing2.checked
+document.testForm.mailing3.checked
