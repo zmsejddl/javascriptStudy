@@ -1,0 +1,28 @@
+id 값이나 class 값을 사용해 폼 요소에 접근하기
+document.querySelector("#billingName").value;
+
+1분 복습
+09/ondragover.html 문서에서 [연락처:] 필드의 id 값을 확인한 후 그 필드에 전화번호를 입력했을 때 그 내용을 가져오는 소스를 콘솔 창에 작성하세요.
+정답:
+document.querySelector("#billingTel").value;
+
+
+name 값을 사용해 폼 요소에 접근하기
+document.ship.shippingName.value
+document.forms["ship"].elements["shippingName"]
+
+1분 복습
+order.html에서 '배송 정보' 중 [주소] 항목에 내용을 입력했을 때, name 속성을 사용해 그 내용에 접근하는 소스를 작성하세요.
+정답:
+document.ship.shippingName.value
+
+
+폼 배열을 사용해 폼 요소에 접근하기
+document.forms
+document.forms[0].elements
+document.forms[0].elements[0].value
+
+1분 복습
+09/reg.html 문서에서 폼 배열을 사용해 '비밀번호' 필드에 입력한 값을 가져오려면 어떤 소스를 사용해야 할까요?
+정답:
+document.forms[0].elements[1].value
