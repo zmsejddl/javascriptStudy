@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/dom.css">
 </head>
 <body>
+	<!-- DOM 요소에 접근하는 여러 가지 방법 -->
+
 	<div id="container">
 			<h1 id="heading">에디오피아 게뎁</h1>
 			<div id="prod-img">
@@ -20,5 +22,38 @@
 					<p class="bright">은은하고 다채로운 꽃향, 망고, 다크 체리, 달달함이 입안 가득.</p>
 			</div>
 	</div>
+
+	<script>
+		// id 선택자를 사용하여 DOM 요소에 접근하는 함수
+		document.getElementById("heading").onclick = function() {
+			this.style.fontSize = "5em"
+		}
+
+		// 1분 복습
+		// <div id="desc"> 부분에 접근하는 소스를 작성하세요
+		// 정답:
+		// document.getElementById("desc");
+
+
+		// class 속성 값을 사용하여 DOM 요소에 접근
+		document.getElementsByClassName("accent");
+
+		// 첫 번째 요소에 접근
+		document.getElementsByClassName("accent")[0].style.textDecoration = "underline"
+
+		// 1분 복습
+		// class = "accent"를 사용하는 웹 요소 중 두 번째 요소에 접근하는 소스를 작성해 보세요
+		// 정답:
+		// document.getElementsByClassName("accent")[1];
+
+
+		// DOM 요소를 태그 이름으로 찾아내는 함수
+		document.getElementsByTagName("h2")[0].style.backgroundColor = "#eee"
+
+
+		// DOM 요소를 다양한 방법으로 찾아주는 함수
+		document.querySelector("#heading")
+		document.querySelectorAll(".accent")[1].style.backgroundColor = "yellow"
+	</script>
 </body>
 </html>
