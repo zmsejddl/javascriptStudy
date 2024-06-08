@@ -8,15 +8,20 @@
 	<link rel="stylesheet" href="css/nameList.css">
 </head>
 <body>
+	<!-- 참가 신청 명단 프로그램 만들기 -->
+
 	<div id="container">
 		<h1>참가 신청</h1>
 		<form action="">
 			<input type="text" id="userName" placeholder="이름" required>
-			<button>신청</button>
+			<button onclick="newRegister();return false;">신청</button>	<!--버튼에 이벤트 함수 지정하기-->
 		</form>
 		<hr>
 		<div id="nameList"></div>
 	</div>
 	
+	<script src="js/register.js">
+
+	</script>
 </body>
 </html>
