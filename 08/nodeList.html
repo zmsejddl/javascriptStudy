@@ -8,6 +8,8 @@
 	<title>노드 리스트</title>
 </head>
 <body>
+	<!-- 여러 노드를 한꺼번에 저장하는 노드 리스트 -->
+
 	<div id="container">
 			<h1>참석자 명단</h1>
 			<div id="nameList">
@@ -16,5 +18,33 @@
 				<p>도레미 <span class="del">X</span></p>
 			</div>
 	</div>
+
+]	<script>
+		// 1분 복습
+		// nodeList.html에서 두 번째 참석자 명단을 가져오려면 어떤 소스를 사용해야 할까요?
+		// 정답:
+		// document.querySelectorAll("p")[1];
+
+		// 자식 노드 있는지 확인하기 - hasChildNodes() 함수
+		document.querySelectorAll("p")[0].hasChildNodes();
+
+		// 자식 노드에 접근하기 - childNodes 속성
+		document.querySelector("#nameList").childNodes;
+
+		// 원하는 위치에 노드 삽입하기 - insertBefore() 함수
+		var nameList = document.querySelector("#nameList");
+		nameList.insertBefore(nameList.children[2], nameList.children[0]);
+
+		// 1분 복습
+		// nodeList.html 문서에서 "홍길동"이라는 텍스트의 부모 노드는 어떤 노드일까요?
+		// 콘솔 창에 소스를 입력해서 "홍길동"이라는 텍스트의 부모 노드를 찾아보세요.
+		// document.querySelectorAll("p")[0].parentNode;
+
+		// 특정 노드 삭제하기 - removeChild() 함수와 parentNode 속성
+		document.querySelectorAll(".del")[0].parentNode;
+		var firstDel = document.querySelectorAll(".del")[0];	//첫 번째 X
+		var firstP = document.querySelectorAll("p")[0];	//첫 번째 p 요소
+		firstP.removeChild(firstDel)	//첫 번째 p 요소에 있는 첫 번째 X 삭제
+	</script>
 </body>
 </html>
