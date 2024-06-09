@@ -1,0 +1,31 @@
+Window 객체의 속성 알아보기
+- 내용 영역의 높이
+window.innerHeight
+
+- 내용 영역의 너비
+window.innerWidth
+
+- 브라우저 창의 바깥 높이
+window.outerHeight
+
+- 브라우저 창의 바깥 너비
+window.outerWidth
+
+
+새 창을 여는 open() 함수
+window.open("링크 주소", "윈도우 이름", "left = 0, top = 0, width = 300, height = 300");
+
+
+크기를 조절하는 resizeBy(), resizeTo() 함수
+var newWin = window.open("", "", "width = 300, height = 300")
+
+newWin.resizeBy(100, 100)
+newWin.resizeBy(-100, -100)
+
+newWin.resizeTo(200, 200)
+
+
+위치를 조절하는 moveBy(), moveTo() 함수
+newWin.moveBy(500, 500);
+
+newWin.moveTo(0, 0);
